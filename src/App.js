@@ -1,18 +1,22 @@
 import './App.css';
 import React from 'react';
-import Button from '@material-ui/core/Button';
+import Grid from '@material-ui/core/Grid'
+import Box from '@material-ui/core/Box';
 import NavBar from './components/navBar/navBar'
-import TextField from '@material-ui/core/TextField';
+import BottomAppBar from './components/bottomAppBar';
 import SearchField from './components/searchField/index'
 
 
 function App() {
   return (
-    <Grid container>
+    <Grid container
+    alignItems="center"
+    justify="center"
+    >
       <Grid lg={12} md={12} xs={12} spacing={1}><NavBar/></Grid>
-      <Grid lg={4} md={6} xs={12} spacing={1}><Box border={1} bgcolor="primary.main" color="white">asdmaslmdl</Box></Grid>
+      <Grid lg={12} md={12} xs={12} spacing={1}><SearchField/></Grid>
       <Grid lg={4} md={6} xs={12} spacing={1}><Box border={1} bgcolor="primary.main" color="white">asdmalsmd</Box></Grid>
-      <Grid lg={4} md={6} xs={12} spacing={1}><Box border={1} bgcolor="primary.main" color="white">sakkdnaklsn</Box></Grid>
+      <Grid lg={12} md={12} xs={12} spacing={1}><BottomAppBar/></Grid>
     </Grid>
   );
 }
