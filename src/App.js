@@ -14,8 +14,7 @@ function App() {
     justify="center"
     >
       <Grid lg={12} md={12} xs={12} spacing={1}><NavBar/></Grid>
-      <Grid lg={12} md={12} xs={12} spacing={1}><SearchField/></Grid>
-      <Grid lg={4} md={6} xs={12} spacing={1}><Box border={1} bgcolor="primary.main" color="white">asdmalsmd</Box></Grid>
+      <Grid lg={4} md={4} xs={4} spacing={1}><SearchField/></Grid>
       <Grid lg={12} md={12} xs={12} spacing={1}><BottomAppBar/></Grid>
     </Grid>
   );
