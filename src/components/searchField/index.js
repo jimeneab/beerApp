@@ -11,6 +11,13 @@ const useStyles = makeStyles((theme) => ({
     display: 'flex',
     alignItems: 'center',
     width: 400,
+    marginTop:'25px',
+    },
+    paper:{
+      backgroundColor: 'black'
+    },
+    iconButton:{
+      color:'white'
     },
     input: {
       marginLeft: theme.spacing(1),
@@ -23,14 +30,14 @@ export default function FormPropsTextFields() {
   return (
     <form className={classes.root} noValidate autoComplete="off">
       <div>
-        <Paper>
+        <Paper className={classes.paper}>
           <InputBase
         className={classes.input}
         placeholder="Search"
         inputProps={{ 'aria-label': 'search google maps' }}
       />
           <IconButton type="submit" className={classes.iconButton} aria-label="search">
-            <SearchIcon />
+            <SearchIcon/>
           </IconButton>
         </Paper>
       </div>
